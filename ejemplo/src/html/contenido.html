@@ -10,5 +10,14 @@
 <p>respuesta1 {{respuesta}}</p>
 <h1>pregunta2</h1>
 <p>respuesta2</p>
+
+<mat-list>
+    <h1 mat-subheader>Your info</h1>
+    <mat-list-item *ngFor="preguntasFrecuentes">
+        <p mat-line> Your address is: <b> {{preguntasFrecuentes.Pregunta}} </b></p>
+        <p mat-line> Your phone is: <b> {{preguntasFrecuentes.Respuesta}} </b></p>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+</mat-list>
 </body>
 </html>

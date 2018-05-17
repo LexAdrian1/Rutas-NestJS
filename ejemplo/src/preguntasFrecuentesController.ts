@@ -10,17 +10,11 @@ export class PreguntasFrecuentesController {
         //return response.send(this.preguntasFrecuentes);
 
         let contenidoHtml = '';
-        fs.readFile(
-            __dirname + '/html/contenido.html',
-            'utf8',
-            (error, contenidoDelArchivo) => {
-                const nombre = 'Alexis';
+        fs.readFile(__dirname + '/html/contenido.html', 'utf8', (error, contenidoDelArchivo) => {
                 if (error) {
                     return response.send('Error');
                 } else {
                     contenidoHtml = contenidoDelArchivo;
-                    contenidoHtml = contenidoHtml.replace('{{nombre}}', nombre);
-                    contenidoHtml = contenidoHtml.replace('{{pregunta}}', this.preguntasFrecuentes[1]);
                     return response.send(contenidoHtml);
                 }
             }
@@ -34,6 +28,6 @@ export class PreguntasFrecuentesController {
             respuesta: request.query.respuesta,
         };
         this.preguntasFrecuentes.push(nuevaPregunta);
-        return response.send(nuevaPregunta);
+        return response.send(this.preguntasFrecuentes);
     }
 }

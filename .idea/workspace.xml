@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9aa65a95-2b10-4920-9fb4-581402e6a5d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/ejemplo/src/inicioController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ejemplo/src/inicioController.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejemplo/src/preguntasFrecuentesController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ejemplo/src/preguntasFrecuentesController.ts" afterDir="false" />
-    </list>
+    <list default="true" id="9aa65a95-2b10-4920-9fb4-581402e6a5d7" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -20,11 +17,8 @@
       <file leaf-file-name="preguntasFrecuentesController.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ejemplo/src/preguntasFrecuentesController.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#0#83#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -83,8 +77,8 @@
       <file leaf-file-name="contenido.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ejemplo/src/html/contenido.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
+            <state relative-caret-position="119">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -108,9 +102,9 @@
         <option value="$PROJECT_DIR$/ejemplo/src/html/footer.html" />
         <option value="$PROJECT_DIR$/ejemplo/src/app.module.ts" />
         <option value="$PROJECT_DIR$/ejemplo/src/app.controller.ts" />
-        <option value="$PROJECT_DIR$/ejemplo/src/html/contenido.html" />
         <option value="$PROJECT_DIR$/ejemplo/src/html/header.html" />
         <option value="$PROJECT_DIR$/ejemplo/src/inicioController.ts" />
+        <option value="$PROJECT_DIR$/ejemplo/src/html/contenido.html" />
         <option value="$PROJECT_DIR$/ejemplo/src/preguntasFrecuentesController.ts" />
       </list>
     </option>
@@ -124,7 +118,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/ejemplo/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="673" />
     <option name="width" value="694" />
     <option name="height" value="735" />
@@ -201,16 +195,15 @@
       <updated>1526252048206</updated>
       <workItem from="1526252049942" duration="12973000" />
       <workItem from="1526442587724" duration="4663000" />
-      <workItem from="1526526225557" duration="5468000" />
+      <workItem from="1526526225557" duration="6575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23104000" />
+    <option name="totallyTimeSpent" value="24211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18235295" />
@@ -243,9 +236,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#83#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -399,13 +389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ejemplo/src/html/contenido.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="61" selection-start-line="17" selection-start-column="61" selection-end-line="17" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ejemplo/src/inicioController.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -413,13 +396,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ejemplo/src/html/contenido.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ejemplo/src/preguntasFrecuentesController.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#0#83#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>

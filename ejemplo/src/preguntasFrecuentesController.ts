@@ -1,33 +1,35 @@
-import {Controller, Get, Post, Req, Res} from "@nestjs/common";
-const fs = require("fs");
-@Controller('Preguntas')
+import { Body, Controller, Get, HttpCode, Post, Req, Res } from '@nestjs/common';
+
+interface PreguntaFrecuente {
+    pregunta: string;
+    respuesta: string;
+}
+
+let preguntasFrecuentes = [];
+
+@Controller("Preguntas")
 export class PreguntasFrecuentesController {
 
-    preguntasFrecuentes  = [];
-
-    @Get('mostrarPreguntas')
-    mostrarPregunta(@Req() request, @Res() response) {
-        //return response.send(this.preguntasFrecuentes);
-
-        let contenidoHtml = '';
-        fs.readFile(__dirname + '/html/contenido.html', 'utf8', (error, contenidoDelArchivo) => {
-                if (error) {
-                    return response.send('Error');
-                } else {
-                    contenidoHtml = contenidoDelArchivo;
-                    return response.send(contenidoHtml);
-                }
-            }
-        );
+    @Post('nuevaPregunta')
+    obtenerPreguntas(@Req() request, @Res() response, @Body() body){
+        Object.keys(request.body).forEach((key)=>{
+            let nuevaPregunta = {
+                pregunta: key,
+                respuesta: request.body[key]
+            };
+            preguntasFrecuentes.push(nuevaPregunta);
+        })
     }
 
-    @Post('nuevaPregunta')
-    crearPregunta(@Req() request, @Res() response) {
-        const nuevaPregunta = {
-            pregunta: request.query.pregunta,
-            respuesta: request.query.respuesta,
-        };
-        this.preguntasFrecuentes.push(nuevaPregunta);
-        return response.send(this.preguntasFrecuentes);
+    @HttpCode(200)
+    @Get('mostrarPreguntas')
+    mostrarPreguntas(){
+        console.log(preguntasFrecuentes);
+        let contenidoHTML = "<!DOCTYPE html><head><title>Preguntas frecuentes</title></head><body>"
+        preguntasFrecuentes.forEach((value, index, preguntasFrecuentes)=>{
+            contenidoHTML += "<h1>" + value.pregunta + "</h1>" + "<br/>" + "<p>" + value.respuesta + "</p>" + "<br/>";
+        });
+        contenidoHTML += "</body>";
+        return contenidoHTML;
     }
 }

@@ -7,9 +7,7 @@ export class InicioController {
 
     @Get('Home')
     mostrarHome(@Req() request, @Res() response){
-
         let inicioHTML = '<!DOCTYPE html><head><title>RouteNestJS</title></head>';
-
         fs.readFile(__dirname + '/html/header.html', "utf8", (err, data)=>{
             if(err && data.length == 0){
                 console.log("Header: " + data.length);
